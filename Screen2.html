@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Search City</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="container" style="margin-top: 0px;">
+          <button type="button" name="del" value="del" id="delete_bnt" class="buttonRight" style="margin-left: 295px;margin-bottom: -2px;">Delete</button>
+          <button type="button" name="del" value="del" id="cancel_bnt" class="buttonRight" style="margin-left: -140px;margin-bottom: -2px; position: absolute;display: none;">Cancel</button>
+          <div style="margin-top: -38px;">
+            <button type="button" name="add" value="add" id="btnclick" class="buttonLeft">Add City</button>
+            <button type="button" onclick="document.location='Screen1.html'" name="back" value="back" class="buttonLeft" id="bckbtn">Back</button>
+          </div>
+          <div class="search" id="city_search" style="margin:auto;max-width:355px">
+            <input type="text" placeholder="Type City" id="add_city10">
+            <button type="submit" value="Submit" onclick="add_this_city()"><i class="fa fa-search"></i></button>
+          </div>
+        <div class="app">
+          <div class="header" id="citytable">
+          </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="weather.js"></script>
+        <script type="text/javascript">
+          get_cityTable();
+        </script>
+    </body>
+</html>
